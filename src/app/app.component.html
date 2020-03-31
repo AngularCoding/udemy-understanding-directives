@@ -24,6 +24,9 @@
             {{even}}
           </li>
         </div>
+        <ng-template [ngIf]="!onlyOdd">
+          <p>asdasd</p>
+        </ng-template>
       </ul>
       <p appBasicHighlight>Style me with basic directive</p>
       <p [appBetterHighlight]="'red'" defaultColor="yellow">Style me with a better directive</p>
